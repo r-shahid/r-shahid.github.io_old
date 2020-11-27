@@ -12,42 +12,63 @@ fetch(url)
             const $first_row = $('<div>').addClass('first-row')
             $($div).append($first_row)
             // title, gradient, label
-            const $title = $('<div>').addClass('title')
+            const $title = $('<div>')
+            $title.text(ent.gsx$title.$t).addClass('title');
             const $gradient = $('<div>').addClass('gradient')
-            const $project_label = $('<div>').addClass('project-label')
             $($first_row).append($title);
             $($first_row).append($gradient);
-            $($first_row).append($project_label);
+            const $gradient_img = $('<img>');
+            $gradient_img.attr('src', ent.gsx$gradient.$t).addClass('gradient-img')
+            $($gradient).append($gradient_img)
             // making second row
             const $second_row = $('<div>').addClass('second-row')
             $($div).append($second_row)
             // project description
-            const $proj_desc = $('<div>').addClass('project-desc')
+            const $proj_desc = $('<div>').text(ent.gsx$description.$t).addClass('project-desc')
             $($second_row).append($proj_desc);
             // making third row
             const $third_row = $('<div>').addClass('third-row')
             $($div).append($third_row)
-            // left panel
-            const $left_panel = $('<div>').addClass('left-panel')
-            $($third_row).append($left_panel)
+            // right panel
+            const $right_panel = $('<div>').addClass('right-panel')
+            $($third_row).append($right_panel)
             //skills and links
-            const $skills = $('<div>').addClass('project-skills')
+            const $skills = $('<div>').text(ent.gsx$skills.$t).addClass('project-skills')
             const $links = $('<div>').addClass('p-links');
-            $($left_panel).append($skills);
-            $($left_panel).append($links);
+            $($right_panel).append($skills);
+            $($right_panel).append($links);
             // deployed links and repo links
             const $project_links = $('<div>').addClass('project-links')
             $($links).append($project_links)
-            const $d_frontend = $('<div>').addClass('d-frontend')
+            const $d_frontend = $('<div>').addClass('d-frontend');
             $($project_links).append($d_frontend)
+            const $frontend_link = $('<a>')
+							.text('View Project')
+                            .attr('href', ent.gsx$deployedfrontend.$t);
+            $($d_frontend).append($frontend_link)
             const $repo_links = $('<div>').addClass('repo-links')
             $($links).append($repo_links)
             const $r_frontend = $('<div>').addClass('frontend')
+            const $frontend_repo_link = $('<a>')
+                .text('Repo')
+                .attr('href', ent.gsx$repofrontend.$t);
+                $($r_frontend).append($frontend_repo_link);
             const $r_backend = $('<div>').addClass('backend');
+                if (ent.gsx$repobackend.$t){
+                    const $backend_repo_link = $('<a>')
+                                .text('Repo')
+                                .attr('href', ent.gsx$repobackend.$t);
+                            $($r_backend).append($backend_repo_link);
+                }
             $($repo_links).append($r_frontend)
             $($repo_links).append($r_backend);
             // project image
             const $proj_img = $('<div>').addClass('project-image')
             $($third_row).append($proj_img)
+            const $image = $('<img>').attr('src', ent.gsx$image.$t);
+            $($proj_img).append($image).wrap(
+                $('<a>').attr('href', ent.gsx$deployedfrontend.$t)
+            )
+
         })
     })

@@ -1,11 +1,10 @@
 .navbar-container {
     width: 100%;
-    background: lightgray;
+    /* background: lightgray; */
     padding: 10px 0;
 }
 
 nav {
-	background-color: lightblue;
     font-family: 'Open Sans', sans-serif;
     width: 90%;
     margin: auto;
@@ -24,18 +23,18 @@ nav .navbar-brand {
 }
 
 nav img {
-	height: 50px;
+	height: 60px;
 	margin: 0px;
 }
 
 nav a {
-	/* color: var(--blue); */
+	color: black;
 	font-weight: bold;
 	letter-spacing: .7px;
 }
 
 nav a:hover {
-	/* color: var(--navy); */
+	color: red;
 }
 
 nav button i {
@@ -57,6 +56,10 @@ nav button i {
     background: lightgrey;
 }
 
+h1 {
+    margin-left: 5%;
+}
+
 .projects {
     width: 100%;
     background: lightsalmon;
@@ -64,7 +67,7 @@ nav button i {
 
 .project {
     width: 70%;
-    margin: auto;
+    margin: 30px auto;
     background: lightpink;
     display: grid;
     grid-template-rows: 1fr, 3fr, 6fr;
@@ -75,9 +78,14 @@ nav button i {
 }
 
 .first-row {
-    height: 40px;
+    /* height: 40px; */
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.gradient-img {
+    height: auto;
+    width: 100%;
 }
 
 .second-row {
