@@ -44,16 +44,26 @@ nav button i {
 
 .landing {
     width: 100%;
-    background: lightcyan;
     padding: 10px 0px;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    background-size: 400% 400%;
+
+    animation: rainbow 10s ease infinite;
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
 }
 
 .intro {
     width: 90%;
     height: 500px;
     margin: auto;
-    padding: 10px;
-    background: lightgrey;
+    padding:  200px 10px;
 }
 
 h1 {
