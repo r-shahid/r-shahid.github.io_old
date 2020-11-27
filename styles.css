@@ -1,0 +1,117 @@
+.navbar-container {
+    width: 100%;
+    background: lightgray;
+    padding: 10px 0;
+}
+
+nav {
+	background-color: lightblue;
+    font-family: 'Open Sans', sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+nav, .navbar-brand, i{
+	padding: unset !important;
+}
+
+nav li {
+	padding-left: 10px;
+}
+
+nav .navbar-brand {
+	margin: 5px;
+}
+
+nav img {
+	height: 50px;
+	margin: 0px;
+}
+
+nav a {
+	/* color: var(--blue); */
+	font-weight: bold;
+	letter-spacing: .7px;
+}
+
+nav a:hover {
+	/* color: var(--navy); */
+}
+
+nav button i {
+	/* color: var(--blue); */
+	margin: unset;
+}
+
+.landing {
+    width: 100%;
+    background: lightcyan;
+    padding: 10px 0px;
+}
+
+.intro {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    padding: 10px;
+    background: lightgrey;
+}
+
+.projects {
+    width: 100%;
+    background: lightsalmon;
+}
+
+.project {
+    width: 70%;
+    margin: auto;
+    background: lightpink;
+    display: grid;
+    grid-template-rows: 1fr, 3fr, 6fr;
+}
+
+.first-row div, .project-desc, .third-row .project-skills, .project-links, .repo-links, .project-image{
+    border: 1px solid black;
+}
+
+.first-row {
+    height: 40px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+
+.second-row {
+    height: 120px;
+}
+
+.project-desc {
+    height: 100%;
+}
+
+.third-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+}
+
+.project-skills {
+    height: 60%;
+}
+
+.p-links {
+    height: 40%;
+}
+
+.project-links, .repo-links {
+    height: 50%;
+}
+
+.frontend, .backend {
+    height: 50%;
+    background-color: lightgoldenrodyellow;
+}
+
+.d-frontend {
+    height: 100%;
+    background-color: lightseagreen;
+}
