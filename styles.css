@@ -56,9 +56,14 @@ nav button i {
             linear-gradient(230deg, rgba(255, 0, 0, 0.6), rgba(255,0,0,0) 80.71%),
             linear-gradient(127deg, rgba(0, 255, 0, 0.3), rgba(0,255,0,0) 70.71%),
             linear-gradient(3deg, rgba(0, 0, 255, 0.3), rgba(0,0,255,0) 70.71%);
+    background:
+            linear-gradient(180deg, rgb(255, 255, 255), rgba(255,0,0,0) 70.71%),
+            linear-gradient(130deg, rgba(0, 175, 250, 0.401), rgba(255,0,0,0) 80.71%),
+            linear-gradient(2deg, rgba(133, 3, 255, 0.4), rgba(0,255,0,0) 70.71%),
+            linear-gradient(230deg, rgba(255, 0, 0, 0.4), rgba(0,0,255,0) 90.71%);
     background-size: 100% 100%;
-
-    /* animation: rainbow 10s ease infinite; */
+    /* background-size: 300% 100%;
+    animation: rainbow 10s ease infinite; */
 }
 
 @keyframes rainbow { 
@@ -110,47 +115,43 @@ nav button i {
 }
 
 .project-heading {
-    /* background-color: rgb(102, 100, 100); */
+    margin-top: 30px;
     padding: 20px 0;
-    /* width: 100%; */
     margin-left: 6%;
     font-size: 30px;
     font-weight: 600;
     font-style: italic;
+}
 
+.projects {
+    max-width: 800px;
+    margin: auto;
 }
 
 .project {
     width: 80%;
     margin: 30px auto;
-    /* background: lightpink; */
+    margin-bottom: 60px;
     display: grid;
     grid-template-rows: 1fr, 3fr, 6fr;
 }
 
-/* .first-row div, .project-desc, .third-row .project-skills, .project-links, .repo-links, .project-image{
-    border: 2px solid black;
-} */
 
 .project{
-    border: 4px solid black;
+    border-top: 4px solid black;
+    border-bottom: 3px solid black;
     font-family: 'Hind', sans-serif;
-    /* font-family: 'Open Sans', sans-serif; */
 }
-
-/* borders */
-.first-row, .project-desc, .project-skills, .project-links {
-    border-bottom: 4px solid black;
+.first-row, .project-desc, .project-links {
+    border-bottom: 3px solid black;
 }
-.title, .right-panel {
-    border-right: 4px solid black;
+.title{
+    border-right: 3px solid black;
 }
-
-/* first row */
 .first-row {
-    /* height: 40px; */
     display: grid;
     grid-template-columns: 2fr 1fr;
+    border-bottom: 4px solid black;
 }
 .gradient-img {
     width: 100%;
@@ -165,39 +166,48 @@ nav button i {
     align-items: center;
     padding-left: 10px;
 }
-
-.second-row {
-    height: 120px;
+.second-row .p-links .project-links {
+    height: 50px;
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
-
-.project-desc {
-    height: 100%;
+.project-links {
+    padding: 0 20px;
+    display: flex;
 }
-
+.project-links a {
+    color: red;
+    font-style: italic;
+}
+.d-frontend {
+    flex-grow: 2;
+    align-self: center;
+}
+.repo-links{
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .third-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 300px;
 }
-
+.project-desc {
+    min-height: 50%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
 .project-skills {
-    height: 60%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 20px 10px;
+    font-weight: bold;
+    color: grey;
+    font-style: italic;
 }
-
-.p-links {
-    height: 40%;
-}
-
-.project-links, .repo-links {
-    height: 50%;
-}
-
-.frontend, .backend {
-    height: 50%;
-    /* background-color: lightgoldenrodyellow; */
-}
-
-.d-frontend {
-    height: 100%;
-    /* background-color: lightseagreen; */
+.project-image img {
+    width: 100%;
 }

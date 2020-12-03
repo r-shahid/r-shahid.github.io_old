@@ -23,20 +23,10 @@ fetch(url)
             // making second row
             const $second_row = $('<div>').addClass('second-row')
             $($div).append($second_row)
-            // project description
-            const $proj_desc = $('<div>').text(ent.gsx$description.$t).addClass('project-desc')
-            $($second_row).append($proj_desc);
-            // making third row
-            const $third_row = $('<div>').addClass('third-row')
-            $($div).append($third_row)
-            // right panel
-            const $right_panel = $('<div>').addClass('right-panel')
-            $($third_row).append($right_panel)
-            //skills and links
-            const $skills = $('<div>').text(ent.gsx$skills.$t).addClass('project-skills')
+
+            //links
             const $links = $('<div>').addClass('p-links');
-            $($right_panel).append($skills);
-            $($right_panel).append($links);
+            $($second_row).append($links);
             // deployed links and repo links
             const $project_links = $('<div>').addClass('project-links')
             $($links).append($project_links)
@@ -47,21 +37,36 @@ fetch(url)
                             .attr('href', ent.gsx$deployedfrontend.$t);
             $($d_frontend).append($frontend_link)
             const $repo_links = $('<div>').addClass('repo-links')
-            $($links).append($repo_links)
+            $($project_links).append($repo_links)
             const $r_frontend = $('<div>').addClass('frontend')
             const $frontend_repo_link = $('<a>')
-                .text('Repo')
+                .text('Frontend Repo')
                 .attr('href', ent.gsx$repofrontend.$t);
                 $($r_frontend).append($frontend_repo_link);
             const $r_backend = $('<div>').addClass('backend');
                 if (ent.gsx$repobackend.$t){
                     const $backend_repo_link = $('<a>')
-                                .text('Repo')
+                                .text('Backend Repo')
                                 .attr('href', ent.gsx$repobackend.$t);
                             $($r_backend).append($backend_repo_link);
                 }
             $($repo_links).append($r_frontend)
             $($repo_links).append($r_backend);
+
+
+            // making third row
+            const $third_row = $('<div>').addClass('third-row')
+            $($div).append($third_row)
+            // right panel
+            const $right_panel = $('<div>').addClass('right-panel')
+            $($third_row).append($right_panel)
+            // project description
+            const $proj_desc = $('<div>').text(ent.gsx$description.$t).addClass('project-desc')
+            $($right_panel).append($proj_desc);
+            // skills
+            const $skills = $('<div>').text(ent.gsx$skills.$t).addClass('project-skills')
+            $($right_panel).append($skills);
+            
             // project image
             const $proj_img = $('<div>').addClass('project-image')
             $($third_row).append($proj_img)
