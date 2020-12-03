@@ -4,6 +4,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+:root {
+    --pink: #ff00b3;
+    --purple: #630daa;
+    --gradient:
+            linear-gradient(130deg, rgba(0, 175, 250, 0.401), rgba(255,0,0,0) 80.71%),
+            linear-gradient(2deg, rgba(133, 3, 255, 0.4), rgba(0,255,0,0) 70.71%),
+            linear-gradient(230deg, rgba(255, 0, 179, 0.712), rgba(0,0,255,0) 90.71%);
+}
+
 .navbar-container {
     width: 100%;
     background: white;
@@ -40,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-	color: red;
+	color:  var(--pink);
 }
 
 nav button i {
@@ -103,7 +112,7 @@ nav button i {
     font-size: 20px;
 }
 
-.about h4 {
+.about h4, .full-about h4 {
     font-size: 20px;
     margin-bottom: 5px;
     font-style: italic;
@@ -134,10 +143,6 @@ nav button i {
     margin-bottom: 60px;
     display: grid;
     grid-template-rows: 1fr, 3fr, 6fr;
-}
-
-
-.project{
     border-top: 4px solid black;
     border-bottom: 3px solid black;
     font-family: 'Hind', sans-serif;
@@ -155,6 +160,7 @@ nav button i {
 }
 .gradient-img {
     width: 100%;
+    /* height: 100%; */
     display: flex;
     align-items: center;
 }
@@ -177,8 +183,14 @@ nav button i {
     display: flex;
 }
 .project-links a {
-    color: red;
+    /* color: #ff00b3; */
+    color: var(--purple);
     font-style: italic;
+}
+.project-links a:hover {
+    /* color: #7373df; */
+    color: var(--pink);
+    text-decoration: none;
 }
 .d-frontend {
     flex-grow: 2;
@@ -208,6 +220,108 @@ nav button i {
     color: grey;
     font-style: italic;
 }
+.project-image {
+    display: flex;
+}
 .project-image img {
     width: 100%;
+    align-self: flex-end;
+}
+
+
+#about {
+    width: 100%;
+    padding: 10px 0px;
+    /* background:
+            linear-gradient(180deg, rgb(255, 255, 255), rgba(255,0,0,0) 70.71%),
+            linear-gradient(230deg, rgba(255, 0, 0, 0.6), rgba(255,0,0,0) 80.71%),
+            linear-gradient(127deg, rgba(0, 255, 0, 0.3), rgba(0,255,0,0) 70.71%),
+            linear-gradient(3deg, rgba(0, 0, 255, 0.3), rgba(0,0,255,0) 70.71%); */
+    /* background:
+            linear-gradient(180deg, rgb(255, 255, 255), rgba(255,0,0,0) 70.71%),
+            linear-gradient(130deg, rgba(0, 175, 250, 0.401), rgba(255,0,0,0) 80.71%),
+            linear-gradient(2deg, rgba(133, 3, 255, 0.4), rgba(0,255,0,0) 70.71%),
+            linear-gradient(230deg, rgba(255, 0, 0, 0.4), rgba(0,0,255,0) 90.71%); */
+    /* background-size: 100% 100%; */
+    /* background-size: 300% 100%;
+    animation: rainbow 10s ease infinite; */
+}
+
+#about {
+    /* width: 100%; */
+    /* add background color maybe? */
+}
+
+.full-about {
+    margin-top:  20px;
+    margin-left: 5%;
+    margin-bottom: 60px;
+    padding: 20px 0;
+    width: 90%;
+}
+.full-about h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-style: italic;
+}
+.full-about p {
+    font-size: 20px;
+}
+.socials a {
+    color: black;
+    padding: 10px 15px;
+}
+.socials a:hover{
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.contact {
+    width: 100%
+}
+.contactform {
+    width: 90%;
+    margin: auto;
+}
+.contactform h3 {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+}
+.contactform form{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
+.contactform form input, .contactform form textarea {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 5px auto;
+}
+.contactform form .submit {
+    border: 1px solid transparent;
+    font-family: 'open sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+.contactform form .submit:hover{
+    background: var(--gradient);
+    /* border: 1px solid black; */
+    color: black;
+    /* text-shadow: 1px 1px 2px black, -1px -1px 2px black; */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 200px;
+    text-align: center;
 }

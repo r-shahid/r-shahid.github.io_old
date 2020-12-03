@@ -1,0 +1,36 @@
+@media screen and (max-width: 600px){
+    body{
+        line-height: 1.1;
+    }
+    .about {
+        width: 100%;
+        font-size: 16px;
+    }
+    .project{
+        border: 3px solid black
+    }
+    .first-row{
+        display: block;
+        padding: 10px;
+    }
+    .gradient-img, .gradient {
+        display: none;
+    }
+    .title {
+        border-right: none;
+    }
+    .third-row {
+        display: block;
+    }
+    .project-skills {
+        font-size: 16px;
+    }
+    .contact {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1000px){
+ 
+}

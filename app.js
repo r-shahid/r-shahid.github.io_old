@@ -77,3 +77,4 @@ fetch(url)
 
         })
     })
+    .then(() => console.log('go back to the Elements tab') )
