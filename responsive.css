@@ -2,6 +2,7 @@
     body{
         line-height: 1.1;
     }
+    
     .about {
         width: 100%;
         font-size: 16px;
@@ -31,6 +32,73 @@
     }
 }
 
-@media screen and (min-width: 1000px){
- 
+@media screen and (min-width: 999px){
+    body {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body {
+        background-color: white;
+    }
+
+    .projects {
+        margin: unset;
+    }
+    .project-image img , .gradient img {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(0100%);
+    }
+    .project:hover img {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }     
+
+    .sidebar {
+        display: unset;
+        float: right;
+        /* background-color: lightgrey; */
+        min-height: 100vh;
+        /* min-width: ; */
+        width: 270px;
+        /* max-width: 30%; */
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+    .sidebar img {
+        display: block;
+        margin: auto;
+        /* margin-top: 10px; */
+    }
+    .sidebar h4 {
+        padding: 20px 0px 30px 0px;
+        font-size: 40px;
+        font-weight: 800;
+        font-style: italic;
+        letter-spacing: 5px;
+        text-decoration: underline overline;
+        text-align: center;
+    }
+    .sidebar iframe {
+        display: block;
+        margin: 0 auto 40px;
+    }
+    .sidebar #curator-feed-default-feed-layout a{
+        /* display: block;
+        width: 230px; */
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        letter-spacing: 1px;
+        /* color: red; */
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1537px){
+    body {
+        background-color: blue;
+    }
+    /* do something about the space bw sidebar and projects */
 }
