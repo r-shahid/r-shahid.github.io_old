@@ -194,7 +194,7 @@
 	.bottom-section {
 		display: flex;
 		padding: 0 20px;
-		margin-top: 205px;
+		margin-top: 100px;
 		/* margin-bottom: 0px; */
 	}
 	.contact {
@@ -215,4 +215,18 @@
     } */
 }
 
+@media screen and (min-width: 1400px){
+	.sidebar {
+		margin-right: 5%;
+	}
 
+	.projects {
+		max-width: 1000px;
+
+	}
+
+	.project {
+		width: 850px;
+		margin-left: 15%;
+	}
+}
