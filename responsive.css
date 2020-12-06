@@ -2,7 +2,9 @@
 	body {
 		/* line-height: 1.1; */
 	}
-
+	div.intro{
+		padding-top: 50px;
+	}
 	.about {
 		width: 100%;
 		font-size: 16px;
