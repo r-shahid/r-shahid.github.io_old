@@ -40,10 +40,15 @@
 } */
 
 @media screen and (min-width: 1200px) {
-	body {
+	/* body {
 		background-color: white;
+	} */
+	nav li {
+		font-size: larger;
 	}
-
+	.project-heading {
+		font-size: 40px;
+	}
 	.projects {
 		margin: unset;
 		/* margin-bottom: 200px; */
@@ -73,14 +78,24 @@
 		margin: auto;
 		/* margin-top: 10px; */
 	}
+	.sidebar hr {
+		/* border: 2px solid black; */
+		height: 3px;
+		background: black;
+		/* color: black; */
+		margin-top: 0px;
+	}
 	.sidebar h4 {
-		padding: 20px 0px 30px 0px;
+		/* padding: 20px 0px 30px 0px; */
 		font-size: 40px;
 		font-weight: 800;
 		font-style: italic;
 		letter-spacing: 5px;
 		text-decoration: underline overline;
-		text-align: center;
+		text-align: center;	
+		/* line-height: 10px; */
+		margin-bottom: 20px;
+		/* padding-bottom: 10px; */
 	}
 	.sidebar iframe {
 		display: block;
@@ -131,6 +146,12 @@
 		transition: 2s ease;
 	}
 
+	
+/* @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: none; }
+} */
+
 	.text {
 		width: 100%;
 		color: black;
@@ -149,7 +170,7 @@
 	}
 
 	.text img {
-		width: 70%;
+		width: 100%;
 		filter: opacity(0.3);
 		-webkit-filter: opacity(0.3);
 	}

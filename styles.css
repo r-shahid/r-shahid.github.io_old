@@ -61,6 +61,12 @@ nav button i {
 	/* color: var(--blue); */
 	margin: unset;
 }
+nav a:hover{
+	background-image: var(--gradient);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
 
 .landing {
 	width: 100%;
@@ -83,8 +89,8 @@ nav button i {
 		linear-gradient(2deg, rgba(133, 3, 255, 0.4), rgba(0, 255, 0, 0) 70.71%),
 		linear-gradient(230deg, rgba(255, 0, 0, 0.4), rgba(0, 0, 255, 0) 90.71%);
 	background-size: 100% 100%;
-	/* background-size: 300% 100%;
-    animation: rainbow 10s ease infinite; */
+	background-size: 200% 100%;
+    animation: rainbow 5s ease infinite;
 }
 
 @keyframes rainbow {
@@ -97,6 +103,21 @@ nav button i {
 	100% {
 		background-position: 0% 82%;
 	}
+}
+
+.name h2 {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	/* border-right: .15em solid orange; The typwriter cursor */
+	white-space: nowrap; 
+	/* margin: 0 auto; Gives that scrolling effect as the typing happens */
+	/* letter-spacing: .15em; Adjust as needed */
+	animation: 
+		typing 3s steps(40, end),
+		blink-caret .5s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 .intro {
@@ -151,7 +172,7 @@ nav button i {
 	padding: 20px 0;
 	margin-left: 6%;
 	font-size: 30px;
-	font-weight: 600;
+	font-weight: 800;
 	font-style: italic;
 }
 
@@ -271,9 +292,9 @@ nav button i {
     animation: rainbow 10s ease infinite; */
 }
 
-.about-image {
+/* .about-image {
 	display: none;
-}
+} */
 
 .full-about {
 	margin-top: 20px;
@@ -296,8 +317,12 @@ nav button i {
 	padding: 10px 15px;
 }
 .socials a:hover {
-	color: var(--pink);
+	/* color: var(--pink); */
 	text-decoration: none;
+	background-image: var(--gradient);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 }
 .grow a:hover {
 	-webkit-transform: scale(1.2);
