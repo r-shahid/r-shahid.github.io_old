@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
 	body {
-		line-height: 1.1;
+		/* line-height: 1.1; */
 	}
 
 	.about {
@@ -199,6 +199,9 @@
 	}
 	.contact {
 		margin-top: 50px;
+	}
+	.contactform form {
+		max-width: 650px;
 	}
 
 	footer {
