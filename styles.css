@@ -142,10 +142,11 @@ nav a:hover{
 }
 
 .about h2 {
-	font-size: 60px;
+	font-size: 80px;
 	margin-bottom: 20px;
 	font-weight: 800;
 	font-style: italic;
+	text-shadow: 3px 3px 4px #506088;
 }
 
 .about p {
@@ -380,4 +381,7 @@ footer {
 	padding: 20px;
 	margin-top: 200px;
 	text-align: center;
+	letter-spacing: 2px;
+	font-style: italic;
+	font-size: 18px;
 }

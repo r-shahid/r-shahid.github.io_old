@@ -103,12 +103,28 @@
 		text-align: center;
 		padding-left: 50px;
 	} */
+	.sidebar .blog-link {
+		display: block;
+		text-align: center;
+		font-size: 22px;
+		font-weight: 600;
+		font-style: italic;
+		color: white;
+		background-color: black;
+		margin-top: 10px;
+		padding: 3px;
+	}
+	.sidebar a:hover{
+		background: var(--gradient);
+		color: black;
+		text-decoration: none;
+	}
 	.sidebar-img {
 		max-width: 270px;
 	}
 	.sidebar iframe {
 		display: block;
-		margin: 20px auto 0 auto;
+		margin: 20px auto;
 	}
 	.sidebar #curator-feed-default-feed-layout a {
 		font-family: 'Open Sans', sans-serif;
@@ -179,7 +195,7 @@
 	}
 
 	.text img {
-		width: 100%;
+		width: 50%;
 		filter: opacity(0.3);
 		-webkit-filter: opacity(0.3);
 	}
