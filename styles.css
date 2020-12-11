@@ -168,6 +168,7 @@ nav a:hover{
 	display: none;
 }
 
+
 .project-heading {
 	margin-top: 30px;
 	padding: 20px 0;
@@ -188,8 +189,9 @@ nav a:hover{
 	margin-bottom: 60px;
 	display: grid;
 	grid-template-rows: 1fr, 3fr, 6fr;
+	border: 3px solid black;
 	border-top: 4px solid black;
-	border-bottom: 3px solid black;
+	/* border-bottom: 3px solid black; */
 	font-family: 'Hind', sans-serif;
 }
 .first-row,

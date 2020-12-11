@@ -99,9 +99,16 @@
 		margin-bottom: 20px;
 		/* padding-bottom: 10px; */
 	}
+	/* .sidebar-post {
+		text-align: center;
+		padding-left: 50px;
+	} */
+	.sidebar-img {
+		max-width: 270px;
+	}
 	.sidebar iframe {
 		display: block;
-		margin: 0 auto 40px;
+		margin: 20px auto 0 auto;
 	}
 	.sidebar #curator-feed-default-feed-layout a {
 		font-family: 'Open Sans', sans-serif;
