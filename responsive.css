@@ -48,6 +48,9 @@
 	nav li {
 		font-size: larger;
 	}
+	.intro{
+		padding-top: 200px;
+	}
 	.project-heading {
 		font-size: 40px;
 	}

@@ -112,19 +112,19 @@ nav a:hover{
 	white-space: nowrap; 
 	/* margin: 0 auto; Gives that scrolling effect as the typing happens */
 	/* letter-spacing: .15em; Adjust as needed */
-	animation: 
+	/* animation: 
 		typing 3s steps(40, end),
-		blink-caret .5s step-end infinite;
+		blink-caret .5s step-end infinite; */
 }
-@keyframes typing {
+/* @keyframes typing {
   from { width: 0 }
   to { width: 100% }
-}
+} */
 
 .intro {
 	/* height: 500px; */
 	/* margin: auto; */
-	padding-top: 200px;
+	padding-top: 100px;
 	margin-left: 5%;
 	/* background-color: white; */
 	/* display: grid;
