@@ -1,9 +1,10 @@
 @media screen and (max-width: 600px) {
-	body {
+	.landing {
 		/* line-height: 1.1; */
+		/* height: 110vh */
 	}
 	div.intro{
-		padding-top: 50px;
+		padding-top: 10px;
 	}
 	.about {
 		width: 100%;
