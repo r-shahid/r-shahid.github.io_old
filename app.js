@@ -1,10 +1,14 @@
+// const fetch = require('node-fetch');
+
 const url =
-	'https://spreadsheets.google.com/feeds/list/1pKeMnD2BjY_BIPKFWaTPWBm4p0BI9_VVH3pAUiH50Z8/od6/public/values?alt=json';
+	// 'https://spreadsheets.google.com/feeds/list/1pKeMnD2BjY_BIPKFWaTPWBm4p0BI9_VVH3pAUiH50Z8/od6/public/values?alt=json';
+	'https://sheets.googleapis.com/v4/spreadsheets/1pKeMnD2BjY_BIPKFWaTPWBm4p0BI9_VVH3pAUiH50Z8/values/Sheet1';
 
 fetch(url)
 	.then((resp) => resp.json())
 	.then((json) => {
 		json.feed.entry.forEach((ent) => {
+			console.log(ent);
 			// making project div
 			const $div = $('<div>').addClass('project');
 			$('.projects').append($div);
