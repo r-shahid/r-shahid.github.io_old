@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- 
+  <!-- 
 
 
 hello there!
@@ -12,60 +12,95 @@ if you don't wanna reach out but want me to know you read this, use the contact 
 
 
     -->
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta property="og:image" content="https://res.cloudinary.com/rshahid/image/upload/v1607217615/portfolio/project_images_7_lr5pdv.png" />
 
-		<link rel="icon" type="image/png" href="./images/rs_logo.png"
+<!-- ==========  TODO  ============================ 
+	- Fix about me sentence under name
+	- should i add a longer about me section?
+	- refine skill descriptions
+	- add projects
+	- dropdown for contact button in navbar
+	- responsive styling!!
+	- cormorant font instead of playfair?
+-->
 
-	
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/rs_logo.png"
+      <!--
+      my
+      stylesheet
+      --
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-		<!-- my stylesheet -->
-		<link rel="stylesheet" href="styles.css" />
+    <title>Riana Shahid</title>
+  </head>
 
-		<title>Riana Shahid</title>
-	</head>
-	<body>
-		<div class="navbar-container">
-			<nav class="navbar navbar-expand-sm">
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#projects">PROJECTS</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="./images/riana_shahid_resume_web.pdf" target="_blank">RESUME</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contact">CONTACT</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
+  <body>
+    <div class="navbar-container">
+      <nav class="navbar navbar-expand-sm">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">projects</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./images/riana_shahid_resume_web.pdf"
+                target="_blank"
+                >resume</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+              <!-- this should be a dropdown with links for github, email, and linkedin -->
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-		<div class="landing">
-			<div class="intro">
-				<div class="about">
-						<h2>Riana Shahid</h2>
-						<p>
-						From Math to Marketing to Software Engineering, I use my analytical
-						skills and eye for design to craft code that makes an impact.
-					</p>
-					
-					<hr />
-					<h4>Skills</h4>
-					<p class="skills">
-						HTML, CSS, JavaScript, React, JQuery, Express, Mongo, PostgreSQL, Ruby on
-						Rails
-					</p>
-				</div>
-			</div>
-		</div>
+    <div class="landing">
+      <div class="intro">
+        <h2>Riana Shahid</h2>
+        <div class="about">
+          <p>
+            I am a data analyst with a background in math and tech. Add more
+            text here. I translate data into valuable and comprehensible
+            insights. My goal is to improve results, make the right decisions
+            and save costs. I am experienced in machine learning, supervised and
+            unsupervised algorithms and use data visualization techniques to
+            present the results. I use SQL, R, Python, QlikView and Tableau for
+            my data projects.
+          </p>
+        </div>
+        <!-- <h4>Skills</h4> -->
+        <div class="skills-section">
+          <p class="skills">
+            Data analysis I am specialized in analyzing data. Results, trends
+            and recommendations are clearly presented in reports or tools.
+          </p>
+          <p class="skills">
+            (Interactive) infographics Present your data in an inspiring way by
+            using an infographic rather than a piece of text. I create
+            interactive infographics which can be used internally or publicly.
+          </p>
+          <p class="skills">
+            Fullstack web development As a web developer, I help to design and
+            create the perfect website for starters and freelancers. HTML, CSS, JavaScript,
+            React, JQuery, Express, Mongo, PostgreSQL, Ruby on Rails
+          </p>
+        </div>
+      </div>
+    </div>
 
-		<h1 class="project-heading" id="projects">PROJECTS</h1>
-		<div class="sidebar">
+    <h1 class="project-heading" id="projects">PROJECTS</h1>
+    <!-- <div class="sidebar">
 			<div class="web">
 				<h4>on the web</h4>
 			</div>
@@ -83,19 +118,17 @@ if you don't wanna reach out but want me to know you read this, use the contact 
 
 			<div class="planning-img">
 					<img src="./images/IMG-6474.jpg" alt="planning page" class="image" />
-				<!-- <img src="./images/IMG-6474.jpg" alt="planning page" class="image" /> -->
 				<div class="overlay">
 					<div class="text">
-						<!-- <img src='./images/hidden_eye.png' alt='Avatar' class='image' /> -->
 						<a  href="https://res.cloudinary.com/rshahid/image/upload/c_scale,w_345/v1607222536/portfolio/IMG-6474_gkpdaq.jpg" target="_blank">
 						<img src="./images/rs_logo.png" alt="logo" />
 						</a>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div class="projects" >
+    <div class="projects" >
 			<div class="project booksy">
 				<div class="first-row">
 					<div class="title">Booksy</div>
@@ -234,12 +267,11 @@ if you don't wanna reach out but want me to know you read this, use the contact 
 			</div>
 		</div>
 
-		<div class="bottom-section">
-			
-			<div id="about">
-				<div class="full-about">
-					<!-- <h3>About Me</h3> -->
-					<!-- <p>
+    <div class="bottom-section">
+      <div id="about">
+        <div class="full-about">
+          <!-- <h3>About Me</h3> -->
+          <!-- <p>
 						I'm an NYU graduate with a BA in Mathematics. When I'm not coding, I
 						work across many mediums, from different kinds of paint to
 						yarn to photography. From a young age, I gravitated towards art
@@ -248,27 +280,24 @@ if you don't wanna reach out but want me to know you read this, use the contact 
 						through my yarn stash by knitting socks for myself and my family. I'm an avid learner who's always willing to try out something new!
 					</p> -->
 
-					<hr />
-					<h4>Connect with Me</h4>
-					<div class="socials grow">
-						<a
-							class="fab fa-github fa-2x"
-							href="https://github.com/r-shahid/"
-						>github</a>
-						<a
-							class="fab fa-linkedin-in fa-2x"
-							href="https://www.linkedin.com/in/rianashahid"
-						>linked in</a>
-						<a
-							class="far fa-envelope fa-2x"
-							href="mailto:info@rianashahid.com"
-						>email</a>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</body>
-	<footer>&#169; Riana Shahid 2020</footer>
-	<!-- <script src="app.js" charset="utf-8"></script> -->
+          <h4>Connect with Me</h4>
+          <div class="socials grow">
+            <a class="fab fa-github fa-2x" href="https://github.com/r-shahid/"
+              >github</a
+            >
+            <a
+              class="fab fa-linkedin-in fa-2x"
+              href="https://www.linkedin.com/in/rianashahid"
+              >linked in</a
+            >
+            <a class="far fa-envelope fa-2x" href="mailto:info@rianashahid.com"
+              >email</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>&#169; Riana Shahid 2020</footer>
+  <!-- <script src="app.js" charset="utf-8"></script> -->
 </html>
