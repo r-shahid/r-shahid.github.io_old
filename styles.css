@@ -28,15 +28,16 @@ body{
 
 /* landing element */
 .landing .intro h2{
-	font-size: 172px;
+	/* font-size: 172px; */
+	font-size: 10em;
 	text-align: center;
 	letter-spacing: 6px;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
 	line-height: 1;
-	padding-top: 25%;
-	font-family: 'Playfair Display', serif;
-	/* font-family: 'Roboto', sans-serif; */
+	padding-top: 15%;
+	/* font-family: 'Playfair Display', serif; */
+	font-family: 'Roboto', sans-serif;
 }
 .landing .intro .about{
 	max-width: 80%;
